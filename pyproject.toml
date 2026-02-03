@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Book-RAG"
+version = "0.1.0"
+description = "AI service providing explaination for certain novels"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Ibrahim Masa'deh", email = "ibrahim.masasdeh.prog@gmail.com" }
+]
+
+dependencies = [
+    "streamlit>=1.30.0",
+    "langchain>=0.1.0",
+    "langchain-community",
+    "langchain-google-genai",
+    "chromadb",
+    "pdfplumber",
+    "python-dotenv",
+    "pydantic>=2.0",
+]
+
+[tool.setuptools.packages]
+find = { include = ["src*"] }
+
+[tool.uvicorn]
+app = ""
+host = ""
+port = 8000
+reload = true
