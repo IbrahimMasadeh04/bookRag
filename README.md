@@ -93,13 +93,6 @@ GOOGLE_API_KEY=your_google_api_key_here
 streamlit run src/main.py
 ```
 
-Or from the root directory:
-
-```bash
-cd c:/Users/DELL/OneDrive\ -\ AHU/Desktop/book_rag
-streamlit run src/main.py
-```
-
 The application will automatically open in your browser at: `http://localhost:8501`
 
 ---
